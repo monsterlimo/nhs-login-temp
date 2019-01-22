@@ -1,0 +1,72 @@
+.sidebar-navigation {
+    padding: 0px;
+    /*
+     * listings can stick to top on desktop
+     */ }
+    .sidebar-navigation > * {
+      padding-left: 16px;
+      padding-right: 16px; }
+    .sidebar-navigation__dropdown-link {
+      font-size: 20px; }
+    .sidebar-navigation hr {
+      display: block;
+      width: auto;
+      margin-top: 5px;
+      border: none;
+      background-color: #333; }
+    .sidebar-navigation__dropdown-link:after {
+      content: '\25BC';
+      display: inline-block;
+      text-decoration: none;
+      padding-left: 0.5em;
+      font-size: 0.7em; }
+    .sidebar-navigation__list {
+      list-style-type: none;
+      padding-top: 12px;
+      padding-bottom: 16px; }
+      .sidebar-navigation__list > ul, .sidebar-navigation__list > ol {
+        list-style-type: disc;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        list-style: disc;
+        margin-left: 18px;
+        padding-left: 0px; }
+        .sidebar-navigation__list > ul > li > a, .sidebar-navigation__list > ol > li > a {
+          text-decoration: underline; }
+          @media (min-width: 641px) {
+            .sidebar-navigation__list > ul > li > a, .sidebar-navigation__list > ol > li > a {
+              text-decoration: none; }
+              .sidebar-navigation__list > ul > li > a.selected, .sidebar-navigation__list > ol > li > a.selected {
+                color: #4C92D9 !important;
+                text-decoration: underline; } }
+          .sidebar-navigation__list > ul > li > a:visited, .sidebar-navigation__list > ol > li > a:visited {
+            color: #005eb8; }
+    @media (min-width: 641px) {
+      .sidebar-navigation h3 {
+        margin-top: 2em; } }
+    @media (min-width: 925px) {
+      .sidebar-navigation__dropdown-link {
+        display: none; }
+      .sidebar-navigation h3 {
+        display: block;
+        margin-top: 0; }
+      .sidebar-navigation__list {
+        background-color: transparent;
+        padding-top: 0px; }
+      .sidebar-navigation li {
+        padding-bottom: 10px; } }
+    .sidebar-navigation li {
+      font-size: 20px;
+      line-height: 24px; }
+    .sidebar-navigation--hidden .sidebar-navigation__list {
+      display: none; }
+      @media (min-width: 925px) {
+        .sidebar-navigation--hidden .sidebar-navigation__list {
+          display: block; } }
+    .sidebar-navigation--hidden .sidebar-navigation__dropdown-link:after {
+      content: '\2219'; }
+    @media (min-width: 925px) {
+      .sidebar-navigation--sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px; } }

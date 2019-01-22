@@ -1,0 +1,77 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="ie8" lang="en"><![endif]--><!--[if IE 9]><html class="ie9" lang="en"><![endif]--><!--[if gt IE 9]><!--><html lang="en" style="background-color: #f0f4f5;"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>NHS.UK frontend - Input with error message</title>
+
+    <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-55Roman.woff2" rel="preload" as="font" crossorigin>
+    <link type="font/woff2" href="https://assets.nhs.uk/fonts/FrutigerLTW01-65Bold.woff2" rel="preload" as="font" crossorigin>
+    <link href="https://www.nhs.uk/" rel="preconnect  dns-prefetch">
+    <link href="https://assets.nhs.uk/" rel="preconnect  dns-prefetch" crossorigin>
+
+    <link href="/assets/nhsuk.css" rel="stylesheet">
+    <link href="/assets/extra.css" rel="stylesheet">
+
+    <script src="/assets/nhsuk.js" defer></script>
+    <script src="/assets/libraries/jquery.min.js"></script>
+
+    <!--[if IE]><link rel="shortcut icon" href="/assets/favicons/favicon.ico"><![endif]-->
+    <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+    <link href="/assets/favicons/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 192x192 pixels in size. -->
+    <link href="/assets/favicons/favicon.png" rel="icon">
+  </head>
+
+  <body class="">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+      
+
+      
+
+  <div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper" id="maincontent">
+
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+          
+
+<div class="nhsuk-form-group nhsuk-form-group--error">
+  <label class="nhsuk-label" for="input-with-error-message">
+    National Insurance number
+  </label>
+
+  
+  
+  <span class="nhsuk-hint" id="input-with-error-message-hint">
+    It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’.
+  </span>
+
+
+  
+  
+  <span id="input-with-error-message-error" class="nhsuk-error-message">
+    Error message goes here
+  </span>
+
+  <input class="nhsuk-input nhsuk-input--error" id="input-with-error-message" name="test-name-3" type="text" aria-describedby="input-with-error-message-hint input-with-error-message-error">
+</div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+
+
+      
+  </body>
+</html>
